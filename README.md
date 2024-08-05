@@ -31,3 +31,13 @@ npm run build
 ```
 
 This will create a `dist` directory with the production build.
+
+### Production build with Docker
+
+To create a production build with Docker, run:
+
+```sh
+docker run -it --rm -u $UID -v ./:/app node:lts sh -c "cd /app && npm ci && npm run build"
+```
+
+Note that the current directory is mounted into the Docker container, so the build artifacts will be available on the host machine.
