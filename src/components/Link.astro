@@ -1,0 +1,17 @@
+---
+interface Props {
+	title: string;
+	href: string;
+	target?: string;
+	classes?: string;
+}
+
+const { title, href, target, classes } = Astro.props;
+---
+
+<a
+	href={href}
+	target={target}
+	class:list={["text-main", classes]}
+	referrerpolicy="no-referrer">{title}</a
+>

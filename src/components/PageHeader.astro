@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import Link from "./Link.astro";
+
+interface Props {
+    hasHeaderImage?: boolean;
+}
+
+const { hasHeaderImage = false } = Astro.props;
+---
+
+<header
+    class="overflow-hidden relative bg-cover bg-fixed bg-[center_top]"
+    style="background-image: url('/cropped-ball-with-binary.jpg')"
+>
+    <div
+        class="shadow-xl flex flex-col items-center top-0 opacity-100 bg-white fixed px-4 py-2 right-0 left-0 z-[4]"
+        role="navigation"
+    >
+        <div class="flex justify-between items-center w-full lg:w-[1024px]">
+            <div class="flex flex-col">
+                <Link title="Christian Gapp" href="/" classes="text-2xl" />
+                <h1>IT Solutions</h1>
+            </div>
+            <Link
+                title="Contact"
+                href="mailto:christian@gappc.net"
+                classes="text-xl"
+            />
+        </div>
+    </div>
+
+    {
+        hasHeaderImage && (
+            <div class="relative z-[3] bg-gray-950/60">
+                <div class="flex flex-col justify-center items-center text-white text-center pt-[161px] pb-[195px]">
+                    <Image
+                        src="/logo-full-white.png"
+                        alt="Christian Gapp - Logo"
+                        width="244"
+                        height="135"
+                        loading="eager"
+                    />
+                    <div class="text-6xl pt-20">IT Solutions</div>
+                    <div class="text-lg pt-4">
+                        Unlock Your Digital Potential
+                    </div>
+                </div>
+            </div>
+        )
+    }
+</header>

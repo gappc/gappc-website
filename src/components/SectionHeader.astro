@@ -1,0 +1,21 @@
+---
+interface Props {
+	title: string;
+	underline?: "left" | "center" | "right" | "none";
+	classes?: string;
+}
+
+const { title, underline = "center", classes } = Astro.props;
+
+const underlineClass = {
+	left: "items-start",
+	center: "items-center",
+	right: "items-end",
+	none: "",
+};
+---
+
+<div class:list={["w-fit flex flex-col mb-6", `${underlineClass[underline]}`, classes]}>
+	<h2 class="text-4xl mt-2 mb-4">{title}</h2>
+	<div class:list={["w-20 h-0.5 bg-main", underline === "none" ? "hidden" : null]}></div>
+</div>

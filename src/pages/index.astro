@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { Image } from "astro:assets";
+import SectionHeader from "../components/SectionHeader.astro";
+import IconLightBulb from "../components/svg/IconLightBulb.astro";
+import IconMail from "../components/svg/IconMail.astro";
+import IconShare from "../components/svg/IconShare.astro";
+import IconSpeach from "../components/svg/IconSpeach.astro";
+import Contact from "../components/Contact.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+---
+
+<Layout
+	title="Christian Gapp - IT Solutions"
+	ogTitle="IT Solutions"
+	ogDescription="Unlock your digital potential. We provide consulting, implementation, and support to leverage IT benefits for your success."
+>
+	<PageHeader hasHeaderImage={true} />
+	<main class="flex flex-col divide-y divide-solid">
+		<SectionContainer classes="flex flex-col items-center px-4 lg:px-0">
+			<SectionHeader title="Offer" classes="pb-12" />
+			<ul class="flex flex-col lg:flex-row justify-center gap-8">
+				<Card
+					title="Consulting"
+					body="We provide consulting to help you find the ideal solution for your needs."
+				>
+					<IconLightBulb classes="fill-main w-16 h-16" />
+				</Card>
+				<Card
+					title="Implementation"
+					body="Know what you want? We take care of the customized implementation!"
+				>
+					<IconShare classes="fill-main w-16 h-16" />
+				</Card>
+				<Card
+					title="Support"
+					body="Things don't always run smoothly. As a competent partner, we are here for you."
+				>
+					<IconSpeach classes="fill-main w-16 h-16" />
+				</Card>
+			</ul>
+		</SectionContainer>
+		<SectionContainer
+			classes="flex flex-col justify-center items-center lg:flex-row px-4 lg:px-0 gap-4"
+		>
+			<div class="flex flex-col basis-1/2">
+				<SectionHeader title="Mission" underline="left" />
+				<p>
+					The key to a successful business lies in a well-functioning
+					IT system. Whether you need consulting to find the best
+					solution or already know what you want and are thinking
+					about implementation, with us as a competent partner by your
+					side, you can leverage the benefits of IT for your success.
+				</p>
+			</div>
+			<Image
+				src="/keyboard-with-key.jpg"
+				alt="Background - binary ball"
+				width="300"
+				height="300"
+				class="basis-1/2"
+			/>
+		</SectionContainer>
+		<SectionContainer
+			classes="flex flex-col items-center gap-4 px-4 lg:px-0"
+		>
+			<SectionHeader title="Christian Gapp" />
+			<p class="mb-12 text-center">
+				I am fascinated by the world of computers. They operate on
+				simple rules, but when you combine these rules, unexpected
+				possibilities can emerge. I will show you the potential and make
+				the resulting opportunities usable for you and your business.
+			</p>
+			<Image
+				src="/GappChristian-300x275.jpg"
+				alt="Gapp Christian"
+				width="300"
+				height="275"
+			/>
+		</SectionContainer>
+	</main>
+	<section class="flex justify-center px-4 py-10 border-t">
+		<Contact
+			href="mailto:christian@gappc.net"
+			text="christian@gappc.net"
+			title="Write a mail to Christian Gapp"
+		>
+			<IconMail classes="fill-main" />
+		</Contact>
+	</section>
+	<PageFooter />
+</Layout>

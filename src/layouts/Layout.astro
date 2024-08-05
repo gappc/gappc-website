@@ -1,0 +1,55 @@
+---
+interface Props {
+	title: string;
+	ogTitle: string;
+	ogDescription?: string;
+}
+
+const { title, ogTitle, ogDescription } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Christian Gapp - IT Solutions" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<title>{title}</title>
+		<meta
+			property="og:title"
+			content={"Christian Gapp - Your IT Solutions Partner - " + ogTitle}
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://gappc.net" />
+		<meta
+			property="og:image"
+			content="https://gappc.net/GappChristian-300x275.jpg"
+		/>
+		{
+			ogDescription && (
+				<meta property="og:description" content={ogDescription} />
+			)
+		}
+		<meta property="og:site_name" content="gappc.net" />
+		<meta property="og:locale" content="en_US" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family:
+			"Open Sans",
+			Helvetica Neue,
+			Sans-serif;
+		@apply text-base;
+		@apply text-stone-700;
+	}
+	h1,
+	h2,
+	h3 {
+		@apply text-stone-900;
+	}
+</style>

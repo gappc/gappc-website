@@ -1,0 +1,14 @@
+---
+interface Props {
+    href: string;
+    text: string;
+    title?: string;
+}
+
+const { href, text, title } = Astro.props;
+---
+
+<a href={href} title={title} class="flex flex-col items-center text-main">
+    <slot />
+    <span class="mt-5">{text}</span>
+</a>

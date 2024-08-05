@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+---
+
+<Layout title="Privacy" ogTitle="Privacy">
+	<PageHeader />
+	<main class="mt-16">
+		<SectionContainer classes="flex flex-col px-4 lg:px-0">
+			<SectionHeader title="Privacy" classes="pb-6" underline="left" />
+			<h2 class="text-2xl">Privacy Policy</h2>
+			<p class="my-2">
+				We place great importance on the protection of your data. To
+				fully inform you about the use of personal data, please take
+				note of the following privacy information.
+			</p>
+			<h3 class="text-xl mt-4">Personal data</h3>
+			<p>
+				Personal data that you electronically transmit on this website,
+				such as your name, email address, address, or other personal
+				information, will only be used by us for the specified purpose,
+				kept secure, and not shared with third parties. The provider
+				automatically collects and stores information on the web server,
+				such as the browser used, operating system, referring page, IP
+				address, time of access, etc. These data cannot be assigned to
+				specific individuals without additional data sources, and we do
+				not further evaluate these data as long as there is no illegal
+				use of our website.
+			</p>
+			<h3 class="text-xl mt-4">Cookies</h3>
+			<p>This website does not use cookies.</p>
+			<h3 class="text-xl mt-4">Right to information</h3>
+			<p>
+				You have the right to obtain information at any time about the
+				data stored concerning your person, their origin and recipients,
+				as well as the purpose of the storage.
+			</p>
+		</SectionContainer>
+	</main>
+	<PageFooter />
+</Layout>

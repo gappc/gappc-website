@@ -1,0 +1,103 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Link from "../components/Link.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+---
+
+<Layout title="Impressum" ogTitle="Impressum">
+	<PageHeader />
+	<main class="mt-16">
+		<SectionContainer classes="flex flex-col px-4 lg:px-0">
+			<SectionHeader title="Impressum" classes="pb-6" underline="left" />
+			<h2 class="text-2xl">General information</h2>
+			<p class="my-2">Christian Gapp</p>
+			<p>Christian Gapp</p>
+			<p>Philippine-Welser-Straße 86 / 4</p>
+			<p>A - 6020 Innsbruck</p>
+			<p class="my-4"><strong>Company purpose:</strong> IT services</p>
+			<p>
+				<strong>Phone:</strong>
+				<Link href="tel:+43 681 10459268" title="+43 681 10459268" />
+			</p>
+			<p>
+				<strong>Email:</strong>
+				<Link
+					href="mailto:christian@gappc.net"
+					title="christian@gappc.net"
+				/>
+			</p>
+			<p class="my-4"><strong>VAT Number:</strong> ATU71286903</p>
+			<p><strong>Member of:</strong> WKO</p>
+			<p class="mt-4">
+				<strong>Information on online dispute resolution:</strong> Consumers
+				have the option to submit complaints to the EU Online Dispute Resolution
+				Platform: <Link
+					href="https://ec.europa.eu/odr"
+					title="https://ec.europa.eu/odr"
+					target="_blank"
+				/>. You can also send any complaints to the email address
+				provided above.
+			</p>
+
+			<h2 class="text-2xl mt-6">Disclaimer</h2>
+			<p class="my-2">
+				This disclaimer is to be considered as part of the internet
+				offer from which reference was made to this website. If parts or
+				individual formulations of this text do not, no longer, or not
+				completely correspond to the current legal situation, the
+				remaining parts of the document remain unaffected in their
+				content and validity.
+			</p>
+			<h3 class="text-xl mt-4">
+				Liability for the contents of this website
+			</h3>
+			<p>
+				The contents of our pages were created with the utmost care.
+				However, we cannot guarantee the accuracy, completeness, and
+				timeliness of the contents. As a service provider, we are
+				responsible for our own content on these pages according to
+				general laws. However, we are not obligated to monitor
+				transmitted or stored third-party information or to investigate
+				circumstances that indicate illegal activity. Obligations to
+				remove or block the use of information according to general laws
+				remain unaffected. However, liability in this regard is only
+				possible from the time of knowledge of a specific legal
+				violation. Upon becoming aware of such legal violations, we will
+				remove these contents immediately.
+			</p>
+			<h3 class="text-xl mt-4">
+				Liability for links to third-party websites
+			</h3>
+			<p>
+				Our offer contains links to external websites. We have no
+				influence on the content of these external websites. Therefore,
+				we cannot assume any responsibility for these external contents.
+				The respective provider or operator of the linked pages is
+				always responsible for their content. The linked pages were
+				checked for possible legal violations at the time of linking.
+				Illegal content was not recognizable at the time of linking.
+				However, permanent content control of the linked pages is not
+				reasonable without concrete evidence of a legal violation. Upon
+				becoming aware of legal violations, we will remove such links
+				immediately.
+			</p>
+
+			<h2 class="text-2xl mt-6">Copyright</h2>
+			<p>
+				The operators of this website strive to always respect the
+				copyrights of others and to use self-created and license-free
+				works. The content and works created by the site operators on
+				this website are subject to copyright. Contributions from third
+				parties are marked as such. The duplication, editing,
+				distribution, and any kind of use beyond the limits of copyright
+				require the written consent of the respective author or creator.
+				Downloads and copies of this site are only permitted for
+				private, non-commercial use.
+			</p>
+		</SectionContainer>
+	</main>
+	<PageFooter />
+</Layout>

@@ -1,0 +1,13 @@
+---
+import Link from "./Link.astro";
+---
+
+<footer class="flex flex-col items-center py-4 gap-2 border-t">
+    <div class="flex gap-2">
+        <Link title="Impressum" href="/impressum" /> | <Link
+            title="Privacy"
+            href="/privacy"
+        />
+    </div>
+    <div>@ Christian Gapp - {new Date().getFullYear()}</div>
+</footer>
