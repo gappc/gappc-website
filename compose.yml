@@ -1,0 +1,10 @@
+services:
+  website:
+    image: joseluisq/static-web-server:2-alpine
+    container_name: "website"
+    # Uncomment the following line to publish to port 8080
+    # ports:
+    #   - 8080:80
+    restart: unless-stopped
+    volumes:
+      - ./dist:/public
