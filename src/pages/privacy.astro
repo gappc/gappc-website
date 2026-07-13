@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Link from "../components/Link.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import PageHeader from "../components/PageHeader.astro";
@@ -12,33 +13,185 @@ import PageFooter from "../components/PageFooter.astro";
 		<SectionContainer classes="flex flex-col px-4 lg:px-0">
 			<SectionHeader title="Privacy" classes="pb-6" underline="left" />
 			<h2 class="text-2xl">Privacy Policy</h2>
+			<p class="my-2 text-sm italic text-stone-500">
+				Last updated: July 13, 2026
+			</p>
+
+			<h3 class="text-xl mt-4">Controller</h3>
 			<p class="my-2">
-				We place great importance on the protection of your data. To
-				fully inform you about the use of personal data, please take
-				note of the following privacy information.
+				The controller responsible for the processing of personal data on this website is:
 			</p>
-			<h3 class="text-xl mt-4">Personal data</h3>
+			<p class="mt-4 font-bold">Christian Gapp</p>
+			<p>Philippine-Welser-Straße 86/4</p>
+			<p>A-6020 Innsbruck</p>
+			<p>Austria</p>
+			<p class="mt-4">
+				<strong>Phone:</strong>
+				<Link href="tel:+4368110459268" title="+43 681 10459268" />
+			</p>
 			<p>
-				Personal data that you electronically transmit on this website,
-				such as your name, email address, address, or other personal
-				information, will only be used by us for the specified purpose,
-				kept secure, and not shared with third parties. The provider
-				automatically collects and stores information on the web server,
-				such as the browser used, operating system, referring page, IP
-				address, time of access, etc. These data cannot be assigned to
-				specific individuals without additional data sources, and we do
-				not further evaluate these data as long as there is no illegal
-				use of our website.
+				<strong>Email:</strong>
+				<Link href="mailto:christian@gappc.net" title="christian@gappc.net" />
 			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">General Information</h3>
+			<p class="my-2">
+				We take the protection of your personal data seriously and process your data in accordance with the General Data Protection Regulation (GDPR) and applicable Austrian data protection laws.
+			</p>
+			<p class="my-2">
+				This Privacy Policy explains what personal data we collect, why we collect it, and what rights you have regarding your personal data.
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">Website Access and Server Log Files</h3>
+			<p class="my-2">
+				When you visit this website, our hosting provider automatically collects and stores certain technical information that your browser transmits.
+			</p>
+			<p class="mt-4">This information may include:</p>
+			<ul class="list-disc pl-5 mt-2 space-y-1">
+				<li>IP address</li>
+				<li>Date and time of access</li>
+				<li>Requested page or file</li>
+				<li>HTTP status code</li>
+				<li>Browser type and version</li>
+				<li>Operating system</li>
+				<li>Referrer URL (if provided)</li>
+			</ul>
+			<p class="my-2 mt-4">
+				These data are processed solely for the purpose of ensuring the secure, reliable, and efficient operation of this website, detecting technical issues, and preventing misuse.
+			</p>
+			<p class="my-2">
+				<strong>Legal basis:</strong> Article 6(1)(f) GDPR (legitimate interest).
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">Hosting</h3>
+			<p class="my-2">
+				This website is hosted by:
+			</p>
+			<p class="mt-4 font-bold">Hetzner Online GmbH</p>
+			<p>Industriestraße 25</p>
+			<p>91710 Gunzenhausen</p>
+			<p>Germany</p>
+			<p class="my-2 mt-4">
+				Hetzner processes personal data on our behalf solely for the purpose of providing the hosting services required to operate this website. A data processing agreement has been concluded where required in accordance with Article 28 GDPR.
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">Contact by Email</h3>
+			<p class="my-2">
+				If you contact us by email, we will process the personal data you voluntarily provide (such as your name, email address, and the content of your message) solely to respond to your inquiry.
+			</p>
+			<p class="mt-4 font-bold">Legal basis:</p>
+			<ul class="list-disc pl-5 mt-2 space-y-1">
+				<li>Article 6(1)(b) GDPR, where processing is necessary for pre-contractual measures or the performance of a contract.</li>
+				<li>Article 6(1)(f) GDPR, where processing is based on our legitimate interest in responding to inquiries.</li>
+			</ul>
+			<p class="my-2 mt-4">
+				Your data will not be shared with third parties unless required by law.
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
 			<h3 class="text-xl mt-4">Cookies</h3>
-			<p>This website does not use cookies.</p>
-			<h3 class="text-xl mt-4">Right to information</h3>
-			<p>
-				You have the right to obtain information at any time about the
-				data stored concerning your person, their origin and recipients,
-				as well as the purpose of the storage.
+			<p class="my-2">
+				This website does <strong>not</strong> use cookies.
+			</p>
+			<p class="my-2">
+				No cookies are used for analytics, advertising, tracking, profiling, or other marketing purposes.
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">External Services</h3>
+			<p class="my-2">
+				This website does <strong>not</strong> use external services or third-party resources such as analytics services, advertising networks, embedded videos, social media plugins, externally hosted fonts, or content delivery networks (CDNs).
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">Data Retention</h3>
+			<p class="my-2">
+				Personal data will only be retained for as long as necessary to fulfil the purposes described in this Privacy Policy or to comply with applicable legal obligations.
+			</p>
+			<p class="my-2">
+				Technical server log files are retained only for the period necessary to ensure the secure and reliable operation of the website.
+			</p>
+			<p class="my-2">
+				Email correspondence is retained only as long as required to process your inquiry or to comply with legal obligations.
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">Data Recipients</h3>
+			<p class="my-2">
+				Personal data is processed by our hosting provider acting as a data processor on our behalf.
+			</p>
+			<p class="my-2">
+				Apart from our hosting provider, personal data will not be disclosed to third parties unless:
+			</p>
+			<ul class="list-disc pl-5 mt-2 space-y-1">
+				<li>disclosure is required by law;</li>
+				<li>it is necessary to establish, exercise, or defend legal claims; or</li>
+				<li>you have given your explicit consent.</li>
+			</ul>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">International Data Transfers</h3>
+			<p class="my-2">
+				No personal data is intentionally transferred to countries outside the European Union (EU) or the European Economic Area (EEA).
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">Your Rights</h3>
+			<p class="my-2">
+				Under the GDPR, you have the following rights:
+			</p>
+			<ul class="list-disc pl-5 mt-2 space-y-1">
+				<li>the right of access to your personal data;</li>
+				<li>the right to rectification of inaccurate or incomplete data;</li>
+				<li>the right to erasure ("right to be forgotten"), where legally applicable;</li>
+				<li>the right to restriction of processing;</li>
+				<li>the right to data portability, where applicable;</li>
+				<li>the right to object to processing based on legitimate interests;</li>
+				<li>the right to withdraw your consent at any time, where processing is based on consent.</li>
+			</ul>
+			<p class="my-2 mt-4">
+				To exercise any of these rights, please contact us using the contact details provided above.
+			</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">Right to Lodge a Complaint</h3>
+			<p class="my-2">
+				If you believe that the processing of your personal data violates applicable data protection law, you have the right to lodge a complaint with the competent supervisory authority.
+			</p>
+			<p class="my-2">
+				For Austria, this is:
+			</p>
+			<p class="mt-4 font-bold">Austrian Data Protection Authority (Datenschutzbehörde)</p>
+			<p>Barichgasse 40–42</p>
+			<p>1030 Vienna</p>
+			<p>Austria</p>
+
+			<hr class="my-6 border-stone-200" />
+
+			<h3 class="text-xl mt-4">Changes to this Privacy Policy</h3>
+			<p class="my-2">
+				We reserve the right to update this Privacy Policy where necessary to reflect changes in legal requirements or changes to this website.
+			</p>
+			<p class="my-2">
+				The version published on this page is always the current version.
 			</p>
 		</SectionContainer>
 	</main>
 	<PageFooter />
 </Layout>
+
